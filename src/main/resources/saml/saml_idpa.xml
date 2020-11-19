@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor entityID="https://sso.maxkey.top/maxkey/saml" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="encryption">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIDfjCCAmagAwIBAgIEXlctizANBgkqhkiG9w0BAQsFADCBgDEgMB4GCSqGSIb3DQEJARYRc2hp
+bWluZ3h5QDE2My5jb20xCzAJBgNVBAYTAmNuMQswCQYDVQQIDAJzaDELMAkGA1UEBwwCc2gxDzAN
+BgNVBAoMBm1heGtleTEPMA0GA1UECwwGbWF4a2V5MRMwEQYDVQQDDAptYXhrZXkub3JnMB4XDTIw
+MDIyNzAyNDczMVoXDTQwMDIyNzAyNDczMVowgYAxIDAeBgkqhkiG9w0BCQEWEXNoaW1pbmd4eUAx
+NjMuY29tMQswCQYDVQQGEwJjbjELMAkGA1UECAwCc2gxCzAJBgNVBAcMAnNoMQ8wDQYDVQQKDAZt
+YXhrZXkxDzANBgNVBAsMBm1heGtleTETMBEGA1UEAwwKbWF4a2V5Lm9yZzCCASIwDQYJKoZIhvcN
+AQEBBQADggEPADCCAQoCggEBALMz3PhR90rEGU+hQI2KlvfbV98JULnov3rf342Z6sZnR0WtlUcZ
+Xk09XFH+H5PuaMHfVR2HQId+T1jucMSm6Xwmce9igOAPshsrIRHYhmpLRKhok5k86A6XPj2g9Tit
+0UR+v2hfWtG56ht7tFIgCnAiNQPA8f5fMfkvUy9uY7rMOJgarFZQndfQIqq1NUJAcC2QUnwswR1X
+GLeUt/amj3hE6QF3hdz+lIzVw8kV0B5M1kTaCaEdfT+i0JHpCrlcYNUxDz9FAguS4UluNzyoMnsI
+DdjhoTvSnPvYMGPhDjxIfYC+SvkkS/vCCzQCTe7tToaHerkR85fRkz2zcQeaBgcCAwEAATANBgkq
+hkiG9w0BAQsFAAOCAQEAGG9hcTuvUwTPkL8mkBgUNGm8PcxE26jOFpBl89NDj5GXTOv4avjAWvoy
+LvwQ5E1YL83mRmtkt95rpnJ1pqQPlppe0E7gpafQoCdRKyiW/gM7CT86EMXDGNv195tfzyKPTlcI
+RewOgbOwHcxRdRNgVc8iOUQdCc4f/kA5BdnbdbGTTN5cumECgiKtmgDB6oniGUC/n0maEE9/qhqd
+4xGPqZRZmPJTQmYXN+UHDMruynC1SOgrUXJ2f75jbB/RzFm+pGnK2lwkFUnCED8RAEYd/qa5yJSX
+4iBKDCKN6xj1AIqBL/LTDgCeO9tJVvA/ze/hl8CC7RBFaRIWxAoM3o03LQ==</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIDfjCCAmagAwIBAgIEXlctizANBgkqhkiG9w0BAQsFADCBgDEgMB4GCSqGSIb3DQEJARYRc2hp
+bWluZ3h5QDE2My5jb20xCzAJBgNVBAYTAmNuMQswCQYDVQQIDAJzaDELMAkGA1UEBwwCc2gxDzAN
+BgNVBAoMBm1heGtleTEPMA0GA1UECwwGbWF4a2V5MRMwEQYDVQQDDAptYXhrZXkub3JnMB4XDTIw
+MDIyNzAyNDczMVoXDTQwMDIyNzAyNDczMVowgYAxIDAeBgkqhkiG9w0BCQEWEXNoaW1pbmd4eUAx
+NjMuY29tMQswCQYDVQQGEwJjbjELMAkGA1UECAwCc2gxCzAJBgNVBAcMAnNoMQ8wDQYDVQQKDAZt
+YXhrZXkxDzANBgNVBAsMBm1heGtleTETMBEGA1UEAwwKbWF4a2V5Lm9yZzCCASIwDQYJKoZIhvcN
+AQEBBQADggEPADCCAQoCggEBALMz3PhR90rEGU+hQI2KlvfbV98JULnov3rf342Z6sZnR0WtlUcZ
+Xk09XFH+H5PuaMHfVR2HQId+T1jucMSm6Xwmce9igOAPshsrIRHYhmpLRKhok5k86A6XPj2g9Tit
+0UR+v2hfWtG56ht7tFIgCnAiNQPA8f5fMfkvUy9uY7rMOJgarFZQndfQIqq1NUJAcC2QUnwswR1X
+GLeUt/amj3hE6QF3hdz+lIzVw8kV0B5M1kTaCaEdfT+i0JHpCrlcYNUxDz9FAguS4UluNzyoMnsI
+DdjhoTvSnPvYMGPhDjxIfYC+SvkkS/vCCzQCTe7tToaHerkR85fRkz2zcQeaBgcCAwEAATANBgkq
+hkiG9w0BAQsFAAOCAQEAGG9hcTuvUwTPkL8mkBgUNGm8PcxE26jOFpBl89NDj5GXTOv4avjAWvoy
+LvwQ5E1YL83mRmtkt95rpnJ1pqQPlppe0E7gpafQoCdRKyiW/gM7CT86EMXDGNv195tfzyKPTlcI
+RewOgbOwHcxRdRNgVc8iOUQdCc4f/kA5BdnbdbGTTN5cumECgiKtmgDB6oniGUC/n0maEE9/qhqd
+4xGPqZRZmPJTQmYXN+UHDMruynC1SOgrUXJ2f75jbB/RzFm+pGnK2lwkFUnCED8RAEYd/qa5yJSX
+4iBKDCKN6xj1AIqBL/LTDgCeO9tJVvA/ze/hl8CC7RBFaRIWxAoM3o03LQ==</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:Organization>
+            <md:OrganizationName>MaxKeyTop</md:OrganizationName>
+            <md:OrganizationDisplayName >MaxKeyTop</md:OrganizationDisplayName>
+            <md:OrganizationURL >https://www.maxkey.top</md:OrganizationURL>
+        </md:Organization>
+        <md:ContactPerson >
+            <md:Company>MaxKeyTop</md:Company>
+            <md:GivenName>maxkey</md:GivenName>
+            <md:SurName>maxkey</md:SurName>
+            <md:EmailAddress>maxkeysupport@163.com</md:EmailAddress>
+            <md:TelephoneNumber>4008981111</md:TelephoneNumber>
+        </md:ContactPerson>
+        <md:SingleLogoutService
+            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sso.maxkey.top/maxkey/logout"/>
+        <md:ManageNameIDService
+            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sso.maxkey.top/maxkey/saml/metadata/Idp_Metadata_361f7df0-069f-435b-89f2-528d6f59bd8e.xml"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:entity</md:NameIDFormat>
+        <md:SingleSignOnService
+            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sso.maxkey.top/maxkey/authz/saml20/361f7df0-069f-435b-89f2-528d6f59bd8e"/>
+        <md:SingleSignOnService
+            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sso.maxkey.top/maxkey/authz/saml20/361f7df0-069f-435b-89f2-528d6f59bd8e"/>
+        <md:SingleSignOnService
+            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://sso.maxkey.top/maxkey/authz/saml20/361f7df0-069f-435b-89f2-528d6f59bd8e"/>
+    </md:IDPSSODescriptor>
+</md:EntityDescriptor>
