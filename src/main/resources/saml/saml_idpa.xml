@@ -58,7 +58,7 @@ RewOgbOwHcxRdRNgVc8iOUQdCc4f/kA5BdnbdbGTTN5cumECgiKtmgDB6oniGUC/n0maEE9/qhqd
             <md:TelephoneNumber>4008981111</md:TelephoneNumber>
         </md:ContactPerson>
         <md:SingleLogoutService
-            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sso.maxkey.top/maxkey/logout"/>
+            Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sso.maxkey.top/maxkey/logout/saml"/>
         <md:ManageNameIDService
             Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sso.maxkey.top/maxkey/saml/metadata/Idp_Metadata_361f7df0-069f-435b-89f2-528d6f59bd8e.xml"/>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
