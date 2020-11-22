@@ -26,6 +26,8 @@ import java.util.Timer;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.MultiThreadedHttpConnectionManager;
+import org.apache.commons.httpclient.protocol.Protocol;
+import org.apache.commons.httpclient.protocol.ProtocolSocketFactory;
 import org.apache.velocity.app.VelocityEngine;
 import org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider;
 import org.opensaml.saml2.metadata.provider.HTTPMetadataProvider;
@@ -261,16 +263,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements I
 	@Qualifier("idp-ssocircle")
 	public ExtendedMetadataDelegate ssoCircleExtendedMetadataProvider()
 			throws MetadataProviderException {
-		//String idpSSOCircleMetadataURL = "https://idp.ssocircle.com/meta-idp.xml";
-	    /*HTTPMetadataProvider httpMetadataProvider = new HTTPMetadataProvider(
-        this.backgroundTask Timer, httpClient(), idpSSOCircleMetadataURL);*/
 	    
-		String idpSSOCircleMetadataURL = "https://sso.maxkey.top/maxkey/metadata/saml20/Idp_Metadata_361f7df0-069f-435b-89f2-528d6f59bd8e.xml";
-		ClassPathResource classPathResource1 = 
-                new ClassPathResource("/saml/saml_idpa.xml");
-		FilesystemMetadataProvider httpMetadataProvider;
+	    String idpSSOCircleMetadataURL = "https://sso.maxkey.top/maxkey/metadata/saml20/Idp_Metadata_361f7df0-069f-435b-89f2-528d6f59bd8e.xml";
+        
         try {
+            ProtocolSocketFactory fcty = new SslSecureProtocolSocketFactory();
+            //加入相关的https请求方式
+            Protocol.registerProtocol("https", new Protocol("https", fcty, 443));
+
+            HTTPMetadataProvider httpMetadataProvider = new HTTPMetadataProvider(
+                    this.backgroundTaskTimer, httpClient(), idpSSOCircleMetadataURL);
+            /*
+            ClassPathResource classPathResource1 = new ClassPathResource("/saml/saml_idpa.xml");
+            FilesystemMetadataProvider httpMetadataProvider;
             httpMetadataProvider = new FilesystemMetadataProvider(classPathResource1.getFile());
+            */
             httpMetadataProvider.setParserPool(parserPool());
             ExtendedMetadataDelegate extendedMetadataDelegate = 
                     new ExtendedMetadataDelegate(httpMetadataProvider, extendedMetadata());
@@ -281,7 +288,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements I
         } catch (MetadataProviderException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-        } catch (IOException e) {
+        } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
